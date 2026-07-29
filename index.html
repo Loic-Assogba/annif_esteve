@@ -15,5 +15,128 @@
             rel="stylesheet"
         />
     </head>
-    <body></body>
+    <body>
+        <!-- Header -->
+        <header
+            class="fixed top-0 left-0 w-full z-50 backdrop-blur-xl bg-slate-950/40 border-b border-white/10"
+        >
+            <nav
+                class="max-w-7xl mx-auto flex items-center justify-between px-6 lg:px-8 h-20"
+            >
+                <!-- Logo -->
+                <a href="#" class="flex items-center gap-3 group">
+                    <div
+                        class="w-12 h-12 rounded-xl bg-gradient-to-br from-orange-400 to-orange-600 flex items-center justify-center shadow-lg shadow-orange-500/30 transition group-hover:scale-110"
+                    >
+                        <span class="text-white font-black text-xl">EZ</span>
+                    </div>
+
+                    <div>
+                        <h1 class="text-white font-bold text-lg leading-none">
+                            Estève Zannou
+                        </h1>
+                        <span class="text-slate-400 text-sm"> Portfolio </span>
+                    </div>
+                </a>
+
+                <!-- Desktop Menu -->
+                <ul
+                    class="hidden lg:flex items-center gap-8 text-slate-300 font-medium"
+                >
+                    <li>
+                        <a
+                            href="#home"
+                            class="hover:text-orange-400 transition duration-300"
+                        >
+                            Accueil
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="#about"
+                            class="hover:text-orange-400 transition duration-300"
+                        >
+                            À propos
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="#skills"
+                            class="hover:text-orange-400 transition duration-300"
+                        >
+                            Compétences
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="#projects"
+                            class="hover:text-orange-400 transition duration-300"
+                        >
+                            Projets
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="#contact"
+                            class="hover:text-orange-400 transition duration-300"
+                        >
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- Actions -->
+                <div class="hidden lg:flex items-center gap-4">
+                    <a
+                        href="#contact"
+                        class="px-6 py-3 rounded-full bg-orange-500 hover:bg-orange-600 text-white font-semibold transition duration-300 shadow-lg shadow-orange-500/30"
+                    >
+                        Me contacter
+                    </a>
+                </div>
+
+                <!-- Mobile Button -->
+                <button id="menu-btn" class="lg:hidden text-white">
+                    <i data-lucide="menu" class="w-8 h-8"></i>
+                </button>
+            </nav>
+
+            <!-- Mobile Menu -->
+            <div
+                id="mobile-menu"
+                class="hidden lg:hidden bg-slate-900/95 backdrop-blur-xl border-t border-white/10"
+            >
+                <ul class="flex flex-col p-6 gap-5 text-slate-300">
+                    <li><a href="#home">Accueil</a></li>
+
+                    <li><a href="#about">À propos</a></li>
+
+                    <li><a href="#skills">Compétences</a></li>
+
+                    <li><a href="#projects">Projets</a></li>
+
+                    <li><a href="#contact">Contact</a></li>
+
+                    <a
+                        href="#contact"
+                        class="mt-4 text-center bg-orange-500 py-3 rounded-full text-white font-semibold"
+                    >
+                        Me contacter
+                    </a>
+                </ul>
+            </div>
+        </header>
+        <script>
+            const menuBtn = document.getElementById('menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            menuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        </script>
+    </body>
 </html>
