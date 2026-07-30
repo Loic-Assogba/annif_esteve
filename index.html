@@ -5,20 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
         <title>Estève Zannou | Happy Birthday</title>
-
-        <!-- Tailwind CSS -->
         <script src="https://cdn.tailwindcss.com"></script>
-
-        <!-- Google Font -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
         <link
             href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
             rel="stylesheet"
         />
-
-        <!-- Lucide Icons -->
         <script src="https://unpkg.com/lucide@latest"></script>
 
         <script>
@@ -38,8 +31,6 @@
     </head>
 
     <body class="bg-slate-950 text-white font-sans">
-        <!-- ================= HEADER ================= -->
-
         <header
             id="header"
             class="fixed top-0 left-0 w-full z-50 transition-all duration-300"
@@ -64,8 +55,6 @@
                         </p>
                     </div>
                 </a>
-
-                <!-- Desktop Menu -->
 
                 <ul class="hidden lg:flex items-center gap-8">
                     <li>
@@ -122,8 +111,6 @@
             </nav>
         </header>
 
-        <!-- ================= MOBILE MENU ================= -->
-
         <aside
             id="mobile-menu"
             class="fixed top-0 right-[-100%] w-72 h-screen bg-slate-900 z-40 transition-all duration-500 shadow-2xl"
@@ -158,19 +145,13 @@
             </nav>
         </aside>
 
-        <!-- Overlay -->
-
         <div id="overlay" class="fixed inset-0 bg-black/60 hidden z-30"></div>
-
-        <!-- Démo -->
 
         <main class="pt-32">
             <section class="h-screen flex items-center justify-center">
                 <h1 class="text-4xl lg:text-6xl font-bold">Bienvenue 👋</h1>
             </section>
         </main>
-
-        <!-- ================= JS ================= -->
 
         <script>
             lucide.createIcons();
@@ -200,8 +181,6 @@
             closeBtn.addEventListener('click', closeMenu);
 
             overlay.addEventListener('click', closeMenu);
-
-            // Header au scroll
 
             const header = document.getElementById('header');
 
