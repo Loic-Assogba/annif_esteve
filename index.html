@@ -215,6 +215,94 @@
                 animation: pulseGlow 8s infinite;
             }
         </style>
+
+        <style>
+            /* Apparition */
+            @keyframes fadeUp {
+                from {
+                    opacity: 0;
+                    transform: translateY(60px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+
+            .reveal {
+                opacity: 0;
+                transform: translateY(60px);
+                transition: all 0.8s ease;
+            }
+
+            .reveal.active {
+                opacity: 1;
+                transform: translateY(0);
+            }
+
+            /* Photo flottante */
+
+            @keyframes floatImage {
+                0% {
+                    transform: translateY(0);
+                }
+
+                50% {
+                    transform: translateY(-18px);
+                }
+
+                100% {
+                    transform: translateY(0);
+                }
+            }
+
+            .float-image {
+                animation: floatImage 6s ease-in-out infinite;
+            }
+
+            /* Carte flottante */
+
+            @keyframes cardFloat {
+                0% {
+                    transform: translateY(0px);
+                }
+
+                50% {
+                    transform: translateY(-8px);
+                }
+
+                100% {
+                    transform: translateY(0px);
+                }
+            }
+
+            .floating-card {
+                animation: cardFloat 4s ease-in-out infinite;
+            }
+
+            /* Glow */
+
+            @keyframes pulseGlow {
+                0% {
+                    transform: scale(1);
+                    opacity: 0.25;
+                }
+
+                50% {
+                    transform: scale(1.08);
+                    opacity: 0.45;
+                }
+
+                100% {
+                    transform: scale(1);
+                    opacity: 0.25;
+                }
+            }
+
+            .glow {
+                animation: pulseGlow 8s infinite;
+            }
+        </style>
     </head>
 
     <script>
@@ -235,6 +323,26 @@
         }
 
         write();
+    </script>
+
+    <script>
+        const reveals = document.querySelectorAll('.reveal');
+
+        function revealSection() {
+            reveals.forEach((item) => {
+                const top = item.getBoundingClientRect().top;
+
+                const visible = window.innerHeight - 120;
+
+                if (top < visible) {
+                    item.classList.add('active');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', revealSection);
+
+        revealSection();
     </script>
 
     <body class="bg-slate-950 text-white font-sans">
