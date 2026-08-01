@@ -981,5 +981,20 @@
                 }
             });
         </script>
+        <script>
+            const bars = document.querySelectorAll('.progress-bar');
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        const bar = entry.target;
+
+                        bar.style.width = bar.dataset.width + '%';
+                    }
+                });
+            });
+
+            bars.forEach((bar) => observer.observe(bar));
+        </script>
     </body>
 </html>
