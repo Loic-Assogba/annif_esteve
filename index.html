@@ -1221,6 +1221,7 @@
                     <!-- Formulaire -->
 
                     <form
+                        id="contactForm"
                         class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-8 space-y-6"
                     >
                         <div>
@@ -1229,8 +1230,10 @@
                             </label>
 
                             <input
+                                id="name"
                                 type="text"
                                 placeholder="Votre nom"
+                                required
                                 class="w-full rounded-xl bg-slate-800 border border-slate-700 px-5 py-4 outline-none focus:border-orange-500"
                             />
                         </div>
@@ -1241,8 +1244,10 @@
                             </label>
 
                             <input
+                                id="email"
                                 type="email"
                                 placeholder="Votre email"
+                                required
                                 class="w-full rounded-xl bg-slate-800 border border-slate-700 px-5 py-4 outline-none focus:border-orange-500"
                             />
                         </div>
@@ -1253,16 +1258,19 @@
                             </label>
 
                             <textarea
+                                id="message"
                                 rows="6"
                                 placeholder="Votre message..."
+                                required
                                 class="w-full rounded-xl bg-slate-800 border border-slate-700 px-5 py-4 outline-none focus:border-orange-500 resize-none"
                             ></textarea>
                         </div>
 
                         <button
+                            type="submit"
                             class="w-full py-4 rounded-xl bg-orange-500 hover:bg-orange-600 transition text-lg font-semibold shadow-lg shadow-orange-500/30"
                         >
-                            Envoyer le message
+                            Envoyer sur WhatsApp
                         </button>
                     </form>
                 </div>
