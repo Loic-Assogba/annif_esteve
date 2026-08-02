@@ -360,6 +360,32 @@
         });
     </script>
 
+    <script>
+        document
+            .getElementById('contactForm')
+            .addEventListener('submit', function (e) {
+                e.preventDefault();
+
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const message = document.getElementById('message').value;
+                const phone = '22992445008';
+
+                const text = `Bonjour Estève 👋
+
+                Nom : ${name}
+
+                Email : ${email}
+
+                Message :
+                ${message}`;
+
+                const url = `https://wa.me/${phone}?text=${encodeURIComponent(text)}`;
+
+                window.open(url, '_blank');
+            });
+    </script>
+
     <body class="bg-slate-950 text-white font-sans">
         <header
             id="header"
