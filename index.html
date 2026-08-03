@@ -20,6 +20,65 @@
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         />
 
+        <!-- Informations générales -->
+        <meta charset="UTF-8" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Estève Zannou | Étudiante en Informatique</title>
+
+        <!-- SEO -->
+        <meta
+            name="description"
+            content="Portfolio de Estève Zannou, étudiante en informatique spécialisée en analyse, programmation, algorithmique et conception de solutions numériques."
+        />
+
+        <meta
+            name="keywords"
+            content="Estève Zannou, informatique, programmation, algorithmique, développement logiciel, bases de données, portfolio étudiant"
+        />
+
+        <meta name="author" content="Estève Zannou" />
+
+        <!-- Apparence navigateur mobile -->
+        <meta name="theme-color" content="#0f172a" />
+
+        <!-- Open Graph Facebook / LinkedIn -->
+        <meta
+            property="og:title"
+            content="Estève Zannou | Étudiante en Informatique"
+        />
+
+        <meta
+            property="og:description"
+            content="Découvrez le parcours, les compétences et les projets informatiques de Estève Zannou."
+        />
+
+        <meta property="og:type" content="website" />
+
+        <meta
+            property="og:image"
+            content="https://votre-site.com/preview.png"
+        />
+
+        <meta property="og:url" content="https://votre-site.com" />
+
+        <!-- Twitter / X -->
+        <meta name="twitter:card" content="summary_large_image" />
+
+        <meta
+            name="twitter:title"
+            content="Estève Zannou | Étudiante en Informatique"
+        />
+
+        <meta
+            name="twitter:description"
+            content="Portfolio d'une étudiante passionnée par l'analyse informatique, la programmation et les nouvelles technologies."
+        />
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="favicon.png" />
+
         <script>
             tailwind.config = {
                 theme: {
@@ -770,8 +829,6 @@
 
         <!-- ================= SKILLS ================= -->
 
-        <!-- ================= SKILLS ================= -->
-
         <section
             id="skills"
             class="relative py-24 lg:py-36 bg-slate-900 overflow-hidden"
@@ -1133,45 +1190,55 @@
 
         <section
             id="contact"
-            class="relative py-24 bg-slate-900 overflow-hidden"
+            class="relative overflow-hidden bg-slate-900 py-20 sm:py-24 lg:py-32"
         >
             <!-- Glow -->
+
             <div
-                class="absolute top-0 -left-40 w-96 h-96 bg-orange-500/10 rounded-full blur-[140px]"
-            ></div>
-            <div
-                class="absolute bottom-0 right-0 w-96 h-96 bg-cyan-500/10 rounded-full blur-[140px]"
+                class="absolute -left-32 top-0 h-96 w-96 rounded-full bg-orange-500/10 blur-[140px]"
             ></div>
 
-            <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
+            <div
+                class="absolute -right-20 bottom-0 h-96 w-96 rounded-full bg-cyan-500/10 blur-[140px]"
+            ></div>
+
+            <div class="relative z-10 mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
                 <!-- Heading -->
 
-                <div class="text-center mb-20 reveal">
+                <div class="reveal text-center">
                     <span
-                        class="inline-flex px-5 py-2 rounded-full bg-orange-500/10 border border-orange-500/20 text-orange-400"
+                        class="inline-flex rounded-full border border-orange-500/20 bg-orange-500/10 px-5 py-2 text-orange-400"
                     >
                         Contact
                     </span>
 
-                    <h2 class="mt-6 text-4xl md:text-5xl font-black">
+                    <h2
+                        class="mt-6 text-3xl font-black leading-tight sm:text-4xl lg:text-5xl"
+                    >
                         Restons en contact
                     </h2>
 
-                    <p class="mt-6 max-w-2xl mx-auto text-slate-400 leading-8">
-                        Une idée, une collaboration ou simplement un message ?
-                        N'hésitez pas à me contacter.
+                    <p
+                        class="mx-auto mt-6 max-w-2xl text-sm leading-8 text-slate-400 sm:text-base"
+                    >
+                        Une question, une collaboration ou simplement un petit
+                        message ? Je serai ravie d'échanger avec vous.
                     </p>
                 </div>
 
-                <div class="grid lg:grid-cols-2 gap-12">
+                <!-- Grid -->
+
+                <div class="mt-16 grid items-start gap-12 lg:grid-cols-2">
                     <!-- Informations -->
 
                     <div class="space-y-6">
+                        <!-- Téléphone -->
+
                         <div
-                            class="flex items-center gap-5 p-6 rounded-3xl bg-white/5 border border-white/10 backdrop-blur-xl hover:border-orange-500 transition"
+                            class="contact-card flex items-center gap-5 p-5 sm:p-6"
                         >
                             <div
-                                class="w-14 h-14 rounded-2xl bg-orange-500/20 flex items-center justify-center"
+                                class="flex h-14 w-14 items-center justify-center rounded-2xl bg-orange-500/20"
                             >
                                 <i
                                     data-lucide="phone"
@@ -1180,139 +1247,174 @@
                             </div>
 
                             <div>
-                                <h4 class="font-bold text-lg">Téléphone</h4>
+                                <h3 class="font-bold">Téléphone</h3>
 
-                                <p class="text-slate-400">
-                                    +229 01 92 44 50 08 / +229 01 99 07 57 29
+                                <p class="text-sm text-slate-400">
+                                    +229 01 92 44 50 08
+                                </p>
+
+                                <p class="text-sm text-slate-400">
+                                    +229 01 99 07 57 29
                                 </p>
                             </div>
                         </div>
 
+                        <!-- Email -->
+
                         <div
-                            class="flex items-center gap-5 p-6 rounded-3xl bg-white/5 border border-white/10 backdrop-blur-xl hover:border-orange-500 transition"
+                            class="contact-card flex items-center gap-5 p-5 sm:p-6"
                         >
                             <div
-                                class="w-14 h-14 rounded-2xl bg-orange-500/20 flex items-center justify-center"
+                                class="flex h-14 w-14 items-center justify-center rounded-2xl bg-orange-500/20"
                             >
-                                <i
-                                    data-lucide="mail"
-                                    class="text-orange-500"
-                                ></i>
+                                <i data-lucide="mail"></i>
                             </div>
 
                             <div>
-                                <h4 class="font-bold text-lg">Email</h4>
+                                <h3 class="font-bold">Email</h3>
 
-                                <p class="text-slate-400">
+                                <p class="break-all text-sm text-slate-400">
                                     zannoumassourath@gmail.com
                                 </p>
                             </div>
                         </div>
 
+                        <!-- Adresse -->
+
                         <div
-                            class="flex items-center gap-5 p-6 rounded-3xl bg-white/5 border border-white/10 backdrop-blur-xl hover:border-orange-500 transition"
+                            class="contact-card flex items-center gap-5 p-5 sm:p-6"
                         >
                             <div
-                                class="w-14 h-14 rounded-2xl bg-orange-500/20 flex items-center justify-center"
+                                class="flex h-14 w-14 items-center justify-center rounded-2xl bg-orange-500/20"
                             >
-                                <i
-                                    data-lucide="map-pin"
-                                    class="text-orange-500"
-                                ></i>
+                                <i data-lucide="map-pin"></i>
                             </div>
 
                             <div>
-                                <h4 class="font-bold text-lg">Localisation</h4>
+                                <h3 class="font-bold">Localisation</h3>
 
-                                <p class="text-slate-400">Bénin</p>
+                                <p class="text-sm text-slate-400">
+                                    République du Bénin 🇧🇯
+                                </p>
                             </div>
                         </div>
 
                         <!-- Réseaux -->
 
-                        <div class="flex gap-4 pt-4">
+                        <div
+                            class="flex flex-wrap justify-center gap-4 pt-4 lg:justify-start"
+                        >
                             <a
                                 href="https://www.facebook.com/profile.php?id=61580912794655"
-                                class="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-orange-500 hover:border-orange-500 transition"
+                                target="_blank"
+                                class="flex h-12 w-12 items-center justify-center rounded-full border border-white/10 bg-white/5 transition-all duration-300 hover:scale-110 hover:border-orange-500 hover:bg-blue-500/30"
                             >
                                 <i class="fa-brands fa-facebook-f"></i>
                             </a>
 
                             <a
                                 href="https://wa.me/2290192445008"
-                                class="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-orange-500 hover:border-orange-500 transition"
+                                target="_blank"
+                                class="flex h-12 w-12 items-center justify-center rounded-full border border-white/10 bg-white/5 transition-all duration-300 hover:scale-110 hover:border-orange-500 hover:bg-green-600/90"
                             >
                                 <i class="fa-brands fa-whatsapp"></i>
                             </a>
 
                             <a
                                 href="https://www.tiktok.com/@estve07?_r=1&_t=ZS-98Who0CXYFo"
-                                class="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-orange-500 hover:border-orange-500 transition"
+                                target="_blank"
+                                class="flex h-12 w-12 items-center justify-center rounded-full border border-white/10 bg-white/5 transition-all duration-300 hover:scale-110 hover:border-orange-500 hover:bg-black/60"
                             >
                                 <i class="fa-brands fa-tiktok"></i>
                             </a>
                         </div>
                     </div>
 
-                    <!-- Formulaire -->
+                    <!-- Formulaire Contact Moderne -->
 
                     <form
                         id="contactForm"
-                        class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-8 space-y-6"
+                        class="group relative w-full max-w-2xl overflow-hidden rounded-2xl border border-white/10 bg-slate-900/60 p-4 shadow-2xl backdrop-blur-xl transition-all duration-500 hover:border-orange-500/30 xs:p-5 sm:rounded-3xl sm:p-8 lg:p-10"
                     >
-                        <div>
-                            <label class="block mb-2 text-slate-300">
-                                Nom
-                            </label>
+                        <!-- Glow -->
+                        <div
+                            class="absolute -right-20 -top-20 h-32 w-32 rounded-full bg-orange-500/20 blur-3xl transition-all duration-500 group-hover:bg-orange-500/30 sm:h-40 sm:w-40"
+                        ></div>
 
-                            <input
-                                id="name"
-                                type="text"
-                                placeholder="Votre nom"
-                                required
-                                class="w-full rounded-xl bg-slate-800 border border-slate-700 px-5 py-4 outline-none focus:border-orange-500"
-                            />
+                        <div class="relative space-y-5 sm:space-y-6">
+                            <!-- Nom -->
+                            <div>
+                                <label
+                                    class="mb-2 block text-sm font-medium text-slate-300 sm:text-base"
+                                >
+                                    Nom complet
+                                </label>
+
+                                <input
+                                    id="name"
+                                    type="text"
+                                    required
+                                    class="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-white outline-none transition-all duration-300 placeholder:text-slate-500 focus:border-orange-500 focus:bg-white/10 focus:ring-2 focus:ring-orange-500/20 sm:px-5 sm:py-4 sm:text-base"
+                                    placeholder="Votre nom"
+                                />
+                            </div>
+
+                            <!-- Email -->
+                            <div>
+                                <label
+                                    class="mb-2 block text-sm font-medium text-slate-300 sm:text-base"
+                                >
+                                    Adresse email
+                                </label>
+
+                                <input
+                                    id="email"
+                                    type="email"
+                                    required
+                                    class="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-white outline-none transition-all duration-300 placeholder:text-slate-500 focus:border-orange-500 focus:bg-white/10 focus:ring-2 focus:ring-orange-500/20 sm:px-5 sm:py-4 sm:text-base"
+                                    placeholder="Votre email"
+                                />
+                            </div>
+
+                            <!-- Message -->
+                            <div>
+                                <label
+                                    class="mb-2 block text-sm font-medium text-slate-300 sm:text-base"
+                                >
+                                    Message
+                                </label>
+
+                                <textarea
+                                    id="message"
+                                    rows="5"
+                                    required
+                                    class="min-h-[130px] w-full resize-none rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-white outline-none transition-all duration-300 placeholder:text-slate-500 focus:border-orange-500 focus:bg-white/10 focus:ring-2 focus:ring-orange-500/20 sm:min-h-[160px] sm:px-5 sm:py-4 sm:text-base"
+                                    placeholder="Écrivez votre message..."
+                                ></textarea>
+                            </div>
+
+                            <!-- Bouton -->
+                            <button
+                                type="submit"
+                                class="relative flex w-full items-center justify-center gap-2 overflow-hidden rounded-xl bg-orange-500 py-3.5 text-base font-semibold text-white shadow-lg shadow-orange-500/30 transition-all duration-300 hover:scale-[1.02] hover:bg-orange-600 active:scale-95 sm:py-4 sm:text-lg"
+                            >
+                                <span class="relative z-10">
+                                    Envoyer sur WhatsApp
+                                </span>
+
+                                <span class="relative z-10 text-lg sm:text-xl">
+                                    ↗
+                                </span>
+
+                                <span
+                                    class="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/20 to-transparent transition-transform duration-700 hover:translate-x-full"
+                                ></span>
+                            </button>
                         </div>
-
-                        <div>
-                            <label class="block mb-2 text-slate-300">
-                                Email
-                            </label>
-
-                            <input
-                                id="email"
-                                type="email"
-                                placeholder="Votre email"
-                                required
-                                class="w-full rounded-xl bg-slate-800 border border-slate-700 px-5 py-4 outline-none focus:border-orange-500"
-                            />
-                        </div>
-
-                        <div>
-                            <label class="block mb-2 text-slate-300">
-                                Message
-                            </label>
-
-                            <textarea
-                                id="message"
-                                rows="6"
-                                placeholder="Votre message..."
-                                required
-                                class="w-full rounded-xl bg-slate-800 border border-slate-700 px-5 py-4 outline-none focus:border-orange-500 resize-none"
-                            ></textarea>
-                        </div>
-
-                        <button
-                            type="submit"
-                            class="w-full py-4 rounded-xl bg-orange-500 hover:bg-orange-600 transition text-lg font-semibold shadow-lg shadow-orange-500/30"
-                        >
-                            Envoyer sur WhatsApp
-                        </button>
                     </form>
                 </div>
             </div>
         </section>
-
         <!-- ================= FOOTER ================= -->
 
         <footer
@@ -1414,21 +1516,24 @@
                         <div class="flex flex-wrap gap-4">
                             <a
                                 href="https://www.facebook.com/profile.php?id=61580912794655"
-                                class="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-orange-500 hover:border-orange-500 transition"
+                                target="_blank"
+                                class="flex h-12 w-12 items-center justify-center rounded-full border border-white/10 bg-white/5 transition-all duration-300 hover:scale-110 hover:border-orange-500 hover:bg-blue-500/30"
                             >
                                 <i class="fa-brands fa-facebook-f"></i>
                             </a>
 
                             <a
                                 href="https://wa.me/2290192445008"
-                                class="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-orange-500 hover:border-orange-500 transition"
+                                target="_blank"
+                                class="flex h-12 w-12 items-center justify-center rounded-full border border-white/10 bg-white/5 transition-all duration-300 hover:scale-110 hover:border-orange-500 hover:bg-green-600/90"
                             >
                                 <i class="fa-brands fa-whatsapp"></i>
                             </a>
 
                             <a
                                 href="https://www.tiktok.com/@estve07?_r=1&_t=ZS-98Who0CXYFo"
-                                class="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-orange-500 hover:border-orange-500 transition"
+                                target="_blank"
+                                class="flex h-12 w-12 items-center justify-center rounded-full border border-white/10 bg-white/5 transition-all duration-300 hover:scale-110 hover:border-orange-500 hover:bg-black/60"
                             >
                                 <i class="fa-brands fa-tiktok"></i>
                             </a>
