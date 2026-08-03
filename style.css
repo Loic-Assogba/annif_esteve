@@ -54,3 +54,19 @@
     opacity: 1;
     transform: translateY(0);
 }
+
+.contact-card {
+    @apply bg-white/5 border border-white/10 backdrop-blur-xl rounded-3xl transition-all duration-300;
+}
+
+.contact-card:hover {
+    transform: translateY(-6px);
+}
+
+.contact-input {
+    @apply w-full rounded-xl bg-slate-800 border border-slate-700 px-5 py-4 outline-none transition-all duration-300;
+}
+
+.contact-input:focus {
+    @apply border-orange-500 ring-2 ring-orange-500/30;
+}
