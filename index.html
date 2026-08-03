@@ -986,7 +986,7 @@
 
         <section
             id="portfolio"
-            class="relative py-24 bg-slate-950 overflow-hidden"
+            class="relative py-24 lg:py-36 bg-slate-950 overflow-hidden"
         >
             <!-- Glow -->
             <div
@@ -996,128 +996,132 @@
                 class="absolute bottom-0 right-0 w-96 h-96 bg-cyan-500/10 rounded-full blur-[150px]"
             ></div>
 
-            <div class="relative z-10 max-w-7xl mx-auto px-6">
-                <!-- Titre -->
+            <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
+                <!-- Heading -->
 
                 <div class="text-center mb-20 reveal">
                     <span
-                        class="px-5 py-2 rounded-full bg-orange-500/10 border border-orange-500/20 text-orange-400"
+                        class="inline-flex px-5 py-2 rounded-full bg-orange-500/10 border border-orange-500/20 text-orange-400 font-medium"
                     >
-                        Portfolio
+                        Mon parcours
                     </span>
 
                     <h2 class="mt-6 text-4xl md:text-5xl font-black">
-                        Mes Réalisations
+                        Projets & Réalisations
                     </h2>
 
-                    <p class="mt-6 text-slate-400 max-w-2xl mx-auto leading-8">
-                        Quelques projets qui illustrent ma créativité, mon
-                        savoir-faire et ma passion pour le développement web.
+                    <p class="mt-6 max-w-3xl mx-auto text-slate-400 leading-8">
+                        À travers mes études en Analyse et Programmation
+                        Informatique, je participe à différents projets
+                        académiques et personnels qui me permettent de
+                        développer mes compétences techniques et ma capacité à
+                        résoudre des problèmes.
                     </p>
                 </div>
 
                 <!-- Grid -->
 
-                <div class="grid gap-8 sm:grid-cols-2 xl:grid-cols-3">
-                    <!-- Projet 1 -->
+                <div
+                    class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8"
+                >
+                    <!-- Projet -->
 
                     <article
-                        class="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl hover:border-orange-500 transition-all duration-500 hover:-translate-y-3"
+                        class="group rounded-3xl overflow-hidden bg-white/5 border border-white/10 backdrop-blur-xl hover:border-orange-500 transition-all duration-500 hover:-translate-y-3"
                     >
-                        <div class="overflow-hidden">
+                        <div class="relative overflow-hidden">
                             <img
-                                src="images/project1.jpg"
-                                alt="Projet 1"
-                                class="w-full h-72 object-cover transition duration-700 group-hover:scale-110"
+                                src="images/algorithm.jpg"
+                                alt="Algorithmique"
+                                class="w-full h-64 object-cover transition duration-700 group-hover:scale-110"
                             />
+
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent"
+                            ></div>
                         </div>
 
                         <div class="p-7">
                             <span class="text-orange-400 text-sm font-semibold">
-                                Portfolio
+                                Projet académique
                             </span>
 
                             <h3 class="mt-3 text-2xl font-bold">
-                                Site Personnel
+                                Analyse d'algorithmes
                             </h3>
 
                             <p class="mt-4 text-slate-400 leading-7">
-                                Un portfolio moderne présentant les compétences
-                                et les réalisations du développeur.
+                                Étude et conception d'algorithmes permettant
+                                d'apporter des solutions efficaces à différents
+                                problèmes informatiques.
                             </p>
-                        </div>
-
-                        <!-- Overlay -->
-
-                        <div
-                            class="absolute inset-0 bg-slate-950/90 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition duration-500"
-                        >
-                            <i
-                                data-lucide="eye"
-                                class="w-12 h-12 text-orange-500"
-                            ></i>
-
-                            <h4 class="mt-5 text-2xl font-bold">
-                                Voir le projet
-                            </h4>
-
-                            <a
-                                href="#"
-                                class="mt-6 px-6 py-3 rounded-full bg-orange-500 hover:bg-orange-600 transition"
-                            >
-                                Ouvrir
-                            </a>
                         </div>
                     </article>
 
-                    <!-- Projet 2 -->
+                    <!-- Projet -->
 
                     <article
-                        class="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl hover:border-orange-500 transition-all duration-500 hover:-translate-y-3"
+                        class="group rounded-3xl overflow-hidden bg-white/5 border border-white/10 backdrop-blur-xl hover:border-cyan-500 transition-all duration-500 hover:-translate-y-3"
                     >
-                        <img
-                            src="images/project2.jpg"
-                            class="w-full h-72 object-cover transition duration-700 group-hover:scale-110"
-                        />
+                        <div class="relative overflow-hidden">
+                            <img
+                                src="images/database.jpg"
+                                alt="Base de données"
+                                class="w-full h-64 object-cover transition duration-700 group-hover:scale-110"
+                            />
+
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent"
+                            ></div>
+                        </div>
 
                         <div class="p-7">
                             <span class="text-cyan-400 text-sm font-semibold">
-                                Application
+                                Projet académique
                             </span>
 
                             <h3 class="mt-3 text-2xl font-bold">
-                                Gestion de Tâches
+                                Modélisation de bases de données
                             </h3>
 
-                            <p class="mt-4 text-slate-400">
-                                Une application web intuitive pour organiser son
-                                travail.
+                            <p class="mt-4 text-slate-400 leading-7">
+                                Conception de bases de données relationnelles et
+                                apprentissage des bonnes pratiques
+                                d'organisation des informations.
                             </p>
                         </div>
                     </article>
 
-                    <!-- Projet 3 -->
+                    <!-- Projet -->
 
                     <article
-                        class="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl hover:border-orange-500 transition-all duration-500 hover:-translate-y-3"
+                        class="group rounded-3xl overflow-hidden bg-white/5 border border-white/10 backdrop-blur-xl hover:border-pink-500 transition-all duration-500 hover:-translate-y-3"
                     >
-                        <img
-                            src="images/project3.jpg"
-                            class="w-full h-72 object-cover transition duration-700 group-hover:scale-110"
-                        />
+                        <div class="relative overflow-hidden">
+                            <img
+                                src="images/programming.jpg"
+                                alt="Programmation"
+                                class="w-full h-64 object-cover transition duration-700 group-hover:scale-110"
+                            />
+
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent"
+                            ></div>
+                        </div>
 
                         <div class="p-7">
                             <span class="text-pink-400 text-sm font-semibold">
-                                Design
+                                Projet personnel
                             </span>
 
                             <h3 class="mt-3 text-2xl font-bold">
-                                Landing Page
+                                Applications en développement
                             </h3>
 
-                            <p class="mt-4 text-slate-400">
-                                Une landing page moderne optimisée pour la
-                                conversion.
+                            <p class="mt-4 text-slate-400 leading-7">
+                                Réalisation de petits projets permettant
+                                d'améliorer mes connaissances en programmation
+                                et de renforcer mon expérience pratique.
                             </p>
                         </div>
                     </article>
